@@ -1,0 +1,16 @@
+Implemente un buscador semántico de texto (en inglés), para esto deberá:
+
+1. El usuario ingresa un texto en el textarea
+2. El usuario da click en el botón 
+3. Obtenga el texto y separe por palabras
+4. Por cada palabra haga una petición al API de "https://dictionaryapi.dev/" 
+	4.1. Procese la respuesta JSON
+	4.2. Extraiga las siguientes claves en el JSON y renderice los valores en las marcas de la estructura HTML (revise plantilla.txt)
+		la clave "word" por el texto -word-
+		la clave "phonetics" > "text" por el texto -phonetics-text-
+		la clave "phonetics" > "audio" por el texto -phonetics-audio-
+		la clave "phonetics" > "sourceUrl" por el texto -phonetics-sourceUrl- 
+		la clave "meanings" > "synonyms" por el texto -synonyms-
+		la clave "meanings" > "antonyms" por el texto -antonyms-
+
+	4.4. Coloque el resultado dentro de la etiqueta div#respuesta 
