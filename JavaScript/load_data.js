@@ -8,7 +8,7 @@ let buttonListener = async (event) => {
     try {
   
         //API key
-        let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${selectedWord}`
+        let URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${selectedWord}`
 
         fetch( URL )
         .then(responseText => responseText.json())
